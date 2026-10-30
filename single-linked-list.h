@@ -252,14 +252,12 @@ private:
     size_t size_ = 0;
 };
 
-// Свободная функция swap
 template <typename Type>
 void swap(SingleLinkedList<Type>& lhs,
           SingleLinkedList<Type>& rhs) noexcept {
     lhs.swap(rhs);
 }
 
-// Сравнение на равенство
 template <typename Type>
 bool operator==(const SingleLinkedList<Type>& lhs,
                 const SingleLinkedList<Type>& rhs) {
@@ -279,7 +277,6 @@ bool operator!=(const SingleLinkedList<Type>& lhs,
     return !(lhs == rhs);
 }
 
-// Лексикографическое сравнение
 template <typename Type>
 bool operator<(const SingleLinkedList<Type>& lhs,
                const SingleLinkedList<Type>& rhs) {
